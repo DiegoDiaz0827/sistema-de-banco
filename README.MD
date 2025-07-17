@@ -1,4 +1,4 @@
-# 🏦Banco Acme - Simulador de Operaciones Bancarias🏦
+# 🏦Banco Acme - Simulador de Operaciones Bancarias
 
 Este proyecto es una simulación de un sistema bancario en entorno web. Permite a los usuarios registrarse, iniciar sesión, realizar transacciones financieras y consultar extractos mensuales.
 
