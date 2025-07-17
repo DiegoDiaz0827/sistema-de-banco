@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Acme - Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <div id="login-view">
+            <h2><img src="assets/05fd0217-a076-41a5-af56-7bb4676ec2d5.jpeg" alt=""></h2>
+            <H2>Bienvenido a Banco Acme</H2>
+            <form id="login-form">
+                <select name="idType" required>
+                    <option value="">Tipo de identificación</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                </select>
+                <input type="text" name="idNumber" placeholder="Número de identificación" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <div class="form-links">
+                <a href="#" id="show-register-link">Crear cuenta</a>
+                <a href="#" id="recordar-contraseña">Recordar contraseña</a>
+            </div>
+        </div>
+
+        <div id="register-view" class="hidden">
+            <h2>Crear Cuenta Bancaria</h2>
+            <form id="register-form">
+                <select name="idTypeReg" required>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                </select>
+                <input type="number" name="idNumberReg" placeholder="Número de identificación" required>
+                <input type="text" name="firstNameReg" pattern="[A-Za-z\s]+" placeholder="Nombres" required>
+                <input type="text" name="lastNameReg"  pattern="[A-Za-z\s]+" placeholder="Apellidos" required>
+                <input type="email" name="emailReg" placeholder="Correo electrónico" required>
+                <input type="text" name="phonereg" pattern="[0-9]+" placeholder="numero telefonico" required>
+
+                <select name="genero" required>
+                    <option value="" disabled selected>genero</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+                <select id="cities" name="city" required>
+                    <option value="" disabled selected>selecciona una ciudad</option>
+                </select>
+                <input type="text" name="direccion" placeholder="Direccion" required>
+                <input type="password" name="passwordReg" placeholder="Crear Contraseña" required>
+                <div class="form-buttons">
+                    <button type="submit">Crear Cuenta</button>
+                    <button type="button" id="cancel-register-btn" class="cancel-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="correo" class="hidden container-recuperar">
+            <h2>Recuperar Contraseña</h2>
+            <label for="correoInput">Escribe tu correo electrónico</label>
+            <input id="correoInput" type="email" placeholder="Correo electrónico" required>
+            <button id="validarCorreoBtn">Validar</button>
+            <label for="codigoVerificacion" id="labelCodigo" class="hidden">Ingresa el código enviado</label>
+            <input type="text" id="codigoVerificacion" placeholder="Código de verificación" class="hidden" />
+            <button id="verificarCodigoBtn" class="hidden">Verificar código</button>
+
+            <button type="button" id="cancelar-recuperar-btn" class="cancel-btn">Cancelar</button>
+        </div>
+
+
+        <div id="contraseña" class="hidden container-recuperar">
+            <h2>Recuperar Contraseña</h2>
+            <label for="nuevaPassword">Escribe tu nueva contraseña</label>
+            <input id="nuevaPassword" type="password" placeholder="Nueva contraseña" required>
+            <label for="confirmPassword">Confirmar contraseña</label>
+            <input id="confirmPassword" type="password" placeholder="Confirmar contraseña" required>
+            <button id="cambiarContraseñaBtn">Cambiar contraseña</button>
+            <button type="button" id="cancelar-recuperar2-btn" class="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

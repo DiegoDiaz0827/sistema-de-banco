@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Banco Acme</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1 id="dash-title"></h1>
+            <button id="logout-btn">Cerrar sesión</button>
+
+        </header>
+        <main class="dashboard-main">
+            <nav class="dashboard-menu">
+                <ul id="menu-options">
+                    <li><a href="#" data-view="summary">Resumen de Cuenta</a></li>
+                    <li><a href="#" data-view="transactions">Resumen de Transacciones</a></li>
+                    <li><a href="#" data-view="deposit">Consignación</a></li>
+                    <li><a href="#" data-view="withdraw">Retiro de Dinero</a></li>
+                    <li><a href="#" data-view="payment">Pago de Servicios</a></li>
+                    <li><a href="#" data-view="statement">Extracto Bancario</a></li>
+                    <li><a href="#" data-view="certificate">Certificado Bancario</a></li>
+                </ul>
+            </nav>
+            <section id="dashboard-content" class="dashboard-content">
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="ui.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>
