@@ -29,7 +29,7 @@ Este proyecto es una simulación de un sistema bancario en entorno web. Permite 
 ├── styles.css # Estilos generales
 ├── assets/ # Imágenes utilizadas
 │ ├── fondo.png
-│ ├── Captura desde 
+│ ├── logo.png
 │ └── 
 ```
 
