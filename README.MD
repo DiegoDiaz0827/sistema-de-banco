@@ -56,7 +56,6 @@ Este proyecto es una simulación de un sistema bancario en entorno web. Permite 
 
 
 👤 Autores: Luis Alejandro Guerrero ropero
-👤 Autores: Diego diaz suarez
 👤 Autores: yessica jaramillo cortina
 
 ¡Gracias por visitar Banco Acme! 💰
